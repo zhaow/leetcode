@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/03/15
+Date                   :=03/04/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Clone_Graph.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Word_Search.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Clone_Graph.cpp$(ObjectSuffix): Clone_Graph.cpp $(IntermediateDirectory)/Clone_Graph.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Clone_Graph.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Clone_Graph.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Clone_Graph.cpp$(DependSuffix): Clone_Graph.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Clone_Graph.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Clone_Graph.cpp$(DependSuffix) -MM "Clone_Graph.cpp"
+$(IntermediateDirectory)/Word_Search.cpp$(ObjectSuffix): Word_Search.cpp $(IntermediateDirectory)/Word_Search.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Word_Search.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Word_Search.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Word_Search.cpp$(DependSuffix): Word_Search.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Word_Search.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Word_Search.cpp$(DependSuffix) -MM "Word_Search.cpp"
 
-$(IntermediateDirectory)/Clone_Graph.cpp$(PreprocessSuffix): Clone_Graph.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Clone_Graph.cpp$(PreprocessSuffix) "Clone_Graph.cpp"
+$(IntermediateDirectory)/Word_Search.cpp$(PreprocessSuffix): Word_Search.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Word_Search.cpp$(PreprocessSuffix) "Word_Search.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

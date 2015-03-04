@@ -95,6 +95,11 @@
     <File Name="Populating_Next_Right_Pointers_in_Each_Node.cpp" ExcludeProjConfig="Debug"/>
     <File Name="First_Missing_Positive.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Remove_Duplicates_from_Sorted_Array_II.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="Clone_Graph.cpp"/>
+    <File Name="Clone_Graph.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="LRU_Cache.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Palindrome_Partitioning_II.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Rotate_Array.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Word_Search.cpp"/>
+    <File Name="Pow_x_n.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
