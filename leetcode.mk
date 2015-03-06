@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/04/15
+Date                   :=03/06/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -50,7 +50,7 @@ LibPath                := $(LibraryPathSwitch).
 AR       := /usr/bin/ar rcu
 CXX      := /usr/bin/g++ 
 CC       := /usr/bin/gcc 
-CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
+CXXFLAGS :=  -g -O0 -Wall -std=c++11 $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
 AS       := /usr/bin/as 
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Word_Search.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Word_Search.cpp$(ObjectSuffix): Word_Search.cpp $(IntermediateDirectory)/Word_Search.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Word_Search.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Word_Search.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Word_Search.cpp$(DependSuffix): Word_Search.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Word_Search.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Word_Search.cpp$(DependSuffix) -MM "Word_Search.cpp"
+$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(ObjectSuffix): Populating_Next_Right_Pointers_in_Each_Node_II.cpp $(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Populating_Next_Right_Pointers_in_Each_Node_II.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(DependSuffix): Populating_Next_Right_Pointers_in_Each_Node_II.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(DependSuffix) -MM "Populating_Next_Right_Pointers_in_Each_Node_II.cpp"
 
-$(IntermediateDirectory)/Word_Search.cpp$(PreprocessSuffix): Word_Search.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Word_Search.cpp$(PreprocessSuffix) "Word_Search.cpp"
+$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(PreprocessSuffix): Populating_Next_Right_Pointers_in_Each_Node_II.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(PreprocessSuffix) "Populating_Next_Right_Pointers_in_Each_Node_II.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -101,9 +101,6 @@ $(IntermediateDirectory)/Word_Search.cpp$(PreprocessSuffix): Word_Search.cpp
 ## Clean
 ##
 clean:
-	$(RM) ./Debug/*$(ObjectSuffix)
-	$(RM) ./Debug/*$(DependSuffix)
-	$(RM) $(OutputFile)
-	$(RM) "../.build-debug/leetcode"
+	$(RM) -r ./Debug/
 
 

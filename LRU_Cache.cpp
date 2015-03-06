@@ -26,7 +26,7 @@ private:
 	list<int> lruList;
 	unordered_map<int, Pvalue> cache;	
 	
-	void update_lru(MpaIter iter)
+	void update_lru(MapIter iter)
 	{
 		int key = iter->first;
 		lruList.erase(iter->second.second);
@@ -82,10 +82,10 @@ int main()
 	cout << test.get(1)<<endl;
 	test.set(2, 4);
 	test.set(3, 8);
-	test.print();
+	//test.print();
 	test.set(1, 9);
 	test.set(4, 16);
-	test.print();
+	//test.print();
 	cin >> i;
 	cout << i;
 	return 0;
