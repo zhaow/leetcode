@@ -34,7 +34,10 @@
     <File Name="Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Trapping_Rain_Water.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Populating_Next_Right_Pointers_in_Each_Node_II.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="Swap_Nodes_in_Pairs.cpp"/>
+    <File Name="Swap_Nodes_in_Pairs.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Search_in_Rotated_Sorted_Array.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Search_in_Rotated_Sorted_Array_II.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Median_of_Two_Sorted_Arrays.cpp" ExcludeProjConfig="Debug"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

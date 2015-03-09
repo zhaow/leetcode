@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/06/15
+Date                   :=03/09/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(ObjectSuffix): Populating_Next_Right_Pointers_in_Each_Node_II.cpp $(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Populating_Next_Right_Pointers_in_Each_Node_II.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(DependSuffix): Populating_Next_Right_Pointers_in_Each_Node_II.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(DependSuffix) -MM "Populating_Next_Right_Pointers_in_Each_Node_II.cpp"
+$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(ObjectSuffix): Search_in_Rotated_Sorted_Array_II.cpp $(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Search_in_Rotated_Sorted_Array_II.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(DependSuffix): Search_in_Rotated_Sorted_Array_II.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(DependSuffix) -MM "Search_in_Rotated_Sorted_Array_II.cpp"
 
-$(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(PreprocessSuffix): Populating_Next_Right_Pointers_in_Each_Node_II.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Populating_Next_Right_Pointers_in_Each_Node_II.cpp$(PreprocessSuffix) "Populating_Next_Right_Pointers_in_Each_Node_II.cpp"
+$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(PreprocessSuffix): Search_in_Rotated_Sorted_Array_II.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(PreprocessSuffix) "Search_in_Rotated_Sorted_Array_II.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
