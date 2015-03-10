@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/09/15
+Date                   :=03/10/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/3Sum.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(ObjectSuffix): Search_in_Rotated_Sorted_Array_II.cpp $(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Search_in_Rotated_Sorted_Array_II.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(DependSuffix): Search_in_Rotated_Sorted_Array_II.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(DependSuffix) -MM "Search_in_Rotated_Sorted_Array_II.cpp"
+$(IntermediateDirectory)/3Sum.cpp$(ObjectSuffix): 3Sum.cpp $(IntermediateDirectory)/3Sum.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/3Sum.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/3Sum.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/3Sum.cpp$(DependSuffix): 3Sum.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/3Sum.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/3Sum.cpp$(DependSuffix) -MM "3Sum.cpp"
 
-$(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(PreprocessSuffix): Search_in_Rotated_Sorted_Array_II.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Search_in_Rotated_Sorted_Array_II.cpp$(PreprocessSuffix) "Search_in_Rotated_Sorted_Array_II.cpp"
+$(IntermediateDirectory)/3Sum.cpp$(PreprocessSuffix): 3Sum.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/3Sum.cpp$(PreprocessSuffix) "3Sum.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

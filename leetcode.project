@@ -38,6 +38,9 @@
     <File Name="Search_in_Rotated_Sorted_Array.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Search_in_Rotated_Sorted_Array_II.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Median_of_Two_Sorted_Arrays.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Longest_Consecutive_Sequence.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Two_Sum.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="3Sum.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
