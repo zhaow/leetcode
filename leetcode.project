@@ -40,7 +40,10 @@
     <File Name="Median_of_Two_Sorted_Arrays.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Longest_Consecutive_Sequence.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Two_Sum.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="3Sum.cpp"/>
+    <File Name="3Sum.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="3Sum_Closest.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="4Sum.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Next_Permutation.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

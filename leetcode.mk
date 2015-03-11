@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/10/15
+Date                   :=03/11/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/3Sum.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Next_Permutation.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/3Sum.cpp$(ObjectSuffix): 3Sum.cpp $(IntermediateDirectory)/3Sum.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/3Sum.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/3Sum.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/3Sum.cpp$(DependSuffix): 3Sum.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/3Sum.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/3Sum.cpp$(DependSuffix) -MM "3Sum.cpp"
+$(IntermediateDirectory)/Next_Permutation.cpp$(ObjectSuffix): Next_Permutation.cpp $(IntermediateDirectory)/Next_Permutation.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Next_Permutation.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Next_Permutation.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Next_Permutation.cpp$(DependSuffix): Next_Permutation.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Next_Permutation.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Next_Permutation.cpp$(DependSuffix) -MM "Next_Permutation.cpp"
 
-$(IntermediateDirectory)/3Sum.cpp$(PreprocessSuffix): 3Sum.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/3Sum.cpp$(PreprocessSuffix) "3Sum.cpp"
+$(IntermediateDirectory)/Next_Permutation.cpp$(PreprocessSuffix): Next_Permutation.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Next_Permutation.cpp$(PreprocessSuffix) "Next_Permutation.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
