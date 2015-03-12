@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/11/15
+Date                   :=03/12/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Next_Permutation.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Gray_Code.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Next_Permutation.cpp$(ObjectSuffix): Next_Permutation.cpp $(IntermediateDirectory)/Next_Permutation.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Next_Permutation.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Next_Permutation.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Next_Permutation.cpp$(DependSuffix): Next_Permutation.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Next_Permutation.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Next_Permutation.cpp$(DependSuffix) -MM "Next_Permutation.cpp"
+$(IntermediateDirectory)/Gray_Code.cpp$(ObjectSuffix): Gray_Code.cpp $(IntermediateDirectory)/Gray_Code.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Gray_Code.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Gray_Code.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Gray_Code.cpp$(DependSuffix): Gray_Code.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Gray_Code.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Gray_Code.cpp$(DependSuffix) -MM "Gray_Code.cpp"
 
-$(IntermediateDirectory)/Next_Permutation.cpp$(PreprocessSuffix): Next_Permutation.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Next_Permutation.cpp$(PreprocessSuffix) "Next_Permutation.cpp"
+$(IntermediateDirectory)/Gray_Code.cpp$(PreprocessSuffix): Gray_Code.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Gray_Code.cpp$(PreprocessSuffix) "Gray_Code.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

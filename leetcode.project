@@ -43,7 +43,10 @@
     <File Name="3Sum.cpp" ExcludeProjConfig="Debug"/>
     <File Name="3Sum_Closest.cpp" ExcludeProjConfig="Debug"/>
     <File Name="4Sum.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="Next_Permutation.cpp"/>
+    <File Name="Next_Permutation.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Permutation_Sequence.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Rotate_Image.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Gray_Code.cpp" ExcludeProjConfig="Debug"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
