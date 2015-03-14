@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/12/15
+Date                   :=03/13/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Gray_Code.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Candy.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Gray_Code.cpp$(ObjectSuffix): Gray_Code.cpp $(IntermediateDirectory)/Gray_Code.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Gray_Code.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Gray_Code.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Gray_Code.cpp$(DependSuffix): Gray_Code.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Gray_Code.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Gray_Code.cpp$(DependSuffix) -MM "Gray_Code.cpp"
+$(IntermediateDirectory)/Candy.cpp$(ObjectSuffix): Candy.cpp $(IntermediateDirectory)/Candy.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Candy.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Candy.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Candy.cpp$(DependSuffix): Candy.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Candy.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Candy.cpp$(DependSuffix) -MM "Candy.cpp"
 
-$(IntermediateDirectory)/Gray_Code.cpp$(PreprocessSuffix): Gray_Code.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Gray_Code.cpp$(PreprocessSuffix) "Gray_Code.cpp"
+$(IntermediateDirectory)/Candy.cpp$(PreprocessSuffix): Candy.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Candy.cpp$(PreprocessSuffix) "Candy.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

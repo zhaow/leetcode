@@ -47,6 +47,9 @@
     <File Name="Permutation_Sequence.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Rotate_Image.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Gray_Code.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Set_Matrix_Zeroes.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Gas_Station.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Candy.cpp" ExcludeProjConfig="Debug"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
