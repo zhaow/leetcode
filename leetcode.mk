@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/14/15
+Date                   :=03/15/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(ObjectSuffix): Remove_Duplicates_from_Sorted_List_II.cpp $(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Remove_Duplicates_from_Sorted_List_II.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(DependSuffix): Remove_Duplicates_from_Sorted_List_II.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(DependSuffix) -MM "Remove_Duplicates_from_Sorted_List_II.cpp"
+$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(ObjectSuffix): Copy_List_with_Random_Pointer.cpp $(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Copy_List_with_Random_Pointer.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(DependSuffix): Copy_List_with_Random_Pointer.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(DependSuffix) -MM "Copy_List_with_Random_Pointer.cpp"
 
-$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(PreprocessSuffix): Remove_Duplicates_from_Sorted_List_II.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(PreprocessSuffix) "Remove_Duplicates_from_Sorted_List_II.cpp"
+$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(PreprocessSuffix): Copy_List_with_Random_Pointer.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(PreprocessSuffix) "Copy_List_with_Random_Pointer.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

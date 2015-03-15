@@ -52,7 +52,10 @@
     <File Name="Candy.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Add_Two_Numbers.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Partition_List.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="Remove_Duplicates_from_Sorted_List_II.cpp"/>
+    <File Name="Remove_Duplicates_from_Sorted_List_II.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Rotate_List.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Reverse_Nodes_in_k_Group.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Copy_List_with_Random_Pointer.cpp" ExcludeProjConfig="Debug"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
