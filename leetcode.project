@@ -50,6 +50,9 @@
     <File Name="Set_Matrix_Zeroes.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Gas_Station.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Candy.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Add_Two_Numbers.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Partition_List.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Remove_Duplicates_from_Sorted_List_II.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

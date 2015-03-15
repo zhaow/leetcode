@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/13/15
+Date                   :=03/14/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Candy.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Candy.cpp$(ObjectSuffix): Candy.cpp $(IntermediateDirectory)/Candy.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Candy.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Candy.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Candy.cpp$(DependSuffix): Candy.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Candy.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Candy.cpp$(DependSuffix) -MM "Candy.cpp"
+$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(ObjectSuffix): Remove_Duplicates_from_Sorted_List_II.cpp $(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Remove_Duplicates_from_Sorted_List_II.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(DependSuffix): Remove_Duplicates_from_Sorted_List_II.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(DependSuffix) -MM "Remove_Duplicates_from_Sorted_List_II.cpp"
 
-$(IntermediateDirectory)/Candy.cpp$(PreprocessSuffix): Candy.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Candy.cpp$(PreprocessSuffix) "Candy.cpp"
+$(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(PreprocessSuffix): Remove_Duplicates_from_Sorted_List_II.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Remove_Duplicates_from_Sorted_List_II.cpp$(PreprocessSuffix) "Remove_Duplicates_from_Sorted_List_II.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
