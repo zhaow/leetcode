@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/15/15
+Date                   :=03/16/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/String_to_Integer.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(ObjectSuffix): Copy_List_with_Random_Pointer.cpp $(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Copy_List_with_Random_Pointer.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(DependSuffix): Copy_List_with_Random_Pointer.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(DependSuffix) -MM "Copy_List_with_Random_Pointer.cpp"
+$(IntermediateDirectory)/String_to_Integer.cpp$(ObjectSuffix): String_to_Integer.cpp $(IntermediateDirectory)/String_to_Integer.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/String_to_Integer.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/String_to_Integer.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/String_to_Integer.cpp$(DependSuffix): String_to_Integer.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/String_to_Integer.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/String_to_Integer.cpp$(DependSuffix) -MM "String_to_Integer.cpp"
 
-$(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(PreprocessSuffix): Copy_List_with_Random_Pointer.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Copy_List_with_Random_Pointer.cpp$(PreprocessSuffix) "Copy_List_with_Random_Pointer.cpp"
+$(IntermediateDirectory)/String_to_Integer.cpp$(PreprocessSuffix): String_to_Integer.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/String_to_Integer.cpp$(PreprocessSuffix) "String_to_Integer.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
