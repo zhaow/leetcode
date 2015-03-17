@@ -18,7 +18,7 @@ The signature of the C++ function had been updated. If you still see your functi
 #include <cstring>
 
 using namespace std;
-
+/*
 class Solution {
 public:
     int atoi(string str) {
@@ -45,17 +45,26 @@ public:
 		}
 		return num * sign;
     }
-private:
-	bool isNum(char a)
-	{
-		if (a>='0' && a<='9')
-			return true;
-		else
-			return false;
-	}
 };
+/**/
+int func(int x)
+{
+	int countx =0;
+	while(x)
+	{
+		countx ++;
+		x = x&(x-1);
+	}
+	return countx;
+} 
 
 int main()
 {
+	while (1)
+	{
+		int tmp;
+		cin >> tmp;
+		cout << func(tmp) << endl;
+	}
 	return 0;
 }

@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/16/15
+Date                   :=03/17/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/String_to_Integer.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Wildcard_Matching.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/String_to_Integer.cpp$(ObjectSuffix): String_to_Integer.cpp $(IntermediateDirectory)/String_to_Integer.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/String_to_Integer.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/String_to_Integer.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/String_to_Integer.cpp$(DependSuffix): String_to_Integer.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/String_to_Integer.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/String_to_Integer.cpp$(DependSuffix) -MM "String_to_Integer.cpp"
+$(IntermediateDirectory)/Wildcard_Matching.cpp$(ObjectSuffix): Wildcard_Matching.cpp $(IntermediateDirectory)/Wildcard_Matching.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Wildcard_Matching.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Wildcard_Matching.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Wildcard_Matching.cpp$(DependSuffix): Wildcard_Matching.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Wildcard_Matching.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Wildcard_Matching.cpp$(DependSuffix) -MM "Wildcard_Matching.cpp"
 
-$(IntermediateDirectory)/String_to_Integer.cpp$(PreprocessSuffix): String_to_Integer.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/String_to_Integer.cpp$(PreprocessSuffix) "String_to_Integer.cpp"
+$(IntermediateDirectory)/Wildcard_Matching.cpp$(PreprocessSuffix): Wildcard_Matching.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Wildcard_Matching.cpp$(PreprocessSuffix) "Wildcard_Matching.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

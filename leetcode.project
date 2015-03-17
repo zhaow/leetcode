@@ -58,7 +58,10 @@
     <File Name="Copy_List_with_Random_Pointer.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Linked_List_Cycle_II.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Reorder_List.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="String_to_Integer.cpp"/>
+    <File Name="String_to_Integer.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Longest_Palindromic_Substring.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Regular_Expression_Matching.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Wildcard_Matching.cpp" ExcludeProjConfig="Debug"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
