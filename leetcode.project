@@ -62,6 +62,11 @@
     <File Name="Longest_Palindromic_Substring.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Regular_Expression_Matching.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Wildcard_Matching.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Longest_Common_Prefix.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Integer_to_Roman.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Roman_to_Integer.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Anagrams.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Simplify_Path.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

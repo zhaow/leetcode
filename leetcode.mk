@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/17/15
+Date                   :=03/18/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Wildcard_Matching.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Simplify_Path.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Wildcard_Matching.cpp$(ObjectSuffix): Wildcard_Matching.cpp $(IntermediateDirectory)/Wildcard_Matching.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Wildcard_Matching.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Wildcard_Matching.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Wildcard_Matching.cpp$(DependSuffix): Wildcard_Matching.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Wildcard_Matching.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Wildcard_Matching.cpp$(DependSuffix) -MM "Wildcard_Matching.cpp"
+$(IntermediateDirectory)/Simplify_Path.cpp$(ObjectSuffix): Simplify_Path.cpp $(IntermediateDirectory)/Simplify_Path.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Simplify_Path.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Simplify_Path.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Simplify_Path.cpp$(DependSuffix): Simplify_Path.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Simplify_Path.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Simplify_Path.cpp$(DependSuffix) -MM "Simplify_Path.cpp"
 
-$(IntermediateDirectory)/Wildcard_Matching.cpp$(PreprocessSuffix): Wildcard_Matching.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Wildcard_Matching.cpp$(PreprocessSuffix) "Wildcard_Matching.cpp"
+$(IntermediateDirectory)/Simplify_Path.cpp$(PreprocessSuffix): Simplify_Path.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Simplify_Path.cpp$(PreprocessSuffix) "Simplify_Path.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
