@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/22/15
+Date                   :=03/23/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(ObjectSuffix): Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp $(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(DependSuffix): Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(DependSuffix) -MM "Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp"
+$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(ObjectSuffix): Convert_Sorted_Array_to_Binary_Search_Tree.cpp $(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Convert_Sorted_Array_to_Binary_Search_Tree.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(DependSuffix): Convert_Sorted_Array_to_Binary_Search_Tree.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(DependSuffix) -MM "Convert_Sorted_Array_to_Binary_Search_Tree.cpp"
 
-$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(PreprocessSuffix): Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(PreprocessSuffix) "Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp"
+$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(PreprocessSuffix): Convert_Sorted_Array_to_Binary_Search_Tree.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(PreprocessSuffix) "Convert_Sorted_Array_to_Binary_Search_Tree.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

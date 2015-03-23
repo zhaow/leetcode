@@ -76,7 +76,10 @@
     <File Name="Binary_Tree_Zigzag_Level_Order_Traversal.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Recover_Binary_Search_Tree.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Flatten_Binary_Tree_to_Linked_List.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp"/>
+    <File Name="Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Unique_Binary_Search_Trees_II.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Validate_Binary_Search_Tree.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Convert_Sorted_Array_to_Binary_Search_Tree.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
