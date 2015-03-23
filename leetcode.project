@@ -66,7 +66,17 @@
     <File Name="Integer_to_Roman.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Roman_to_Integer.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Anagrams.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="Simplify_Path.cpp"/>
+    <File Name="Simplify_Path.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Longest_Valid_Parentheses.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Largest_Rectangle_in_Histogram.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Binary_Tree_Preorder_Traversal.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Binary_Tree_Postorder_Traversal.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Binary_Tree_Inorder_Traversal.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Binary_Tree_Level_Order_Traversal_II.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Binary_Tree_Zigzag_Level_Order_Traversal.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Recover_Binary_Search_Tree.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Flatten_Binary_Tree_to_Linked_List.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

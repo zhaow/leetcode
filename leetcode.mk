@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/18/15
+Date                   :=03/22/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Simplify_Path.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Simplify_Path.cpp$(ObjectSuffix): Simplify_Path.cpp $(IntermediateDirectory)/Simplify_Path.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Simplify_Path.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Simplify_Path.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Simplify_Path.cpp$(DependSuffix): Simplify_Path.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Simplify_Path.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Simplify_Path.cpp$(DependSuffix) -MM "Simplify_Path.cpp"
+$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(ObjectSuffix): Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp $(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(DependSuffix): Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(DependSuffix) -MM "Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp"
 
-$(IntermediateDirectory)/Simplify_Path.cpp$(PreprocessSuffix): Simplify_Path.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Simplify_Path.cpp$(PreprocessSuffix) "Simplify_Path.cpp"
+$(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(PreprocessSuffix): Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp$(PreprocessSuffix) "Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
