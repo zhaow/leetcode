@@ -79,7 +79,15 @@
     <File Name="Construct _Binary _Tree_from_Preorder_and_Inorder_Traversal.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Unique_Binary_Search_Trees_II.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Validate_Binary_Search_Tree.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="Convert_Sorted_Array_to_Binary_Search_Tree.cpp"/>
+    <File Name="Convert_Sorted_Array_to_Binary_Search_Tree.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Convert_Sorted_List_to_Binary_Search_Tree.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Binary_Tree_Maximum_Path_Sum.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Merge_Two_Sorted_Lists.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Merge_k_Sorted_Lists.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Insertion_Sort_List.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Sort_List.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Number_of_1_Bits.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Reverse_Bits.cpp" ExcludeProjConfig="Debug"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

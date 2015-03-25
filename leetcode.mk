@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/23/15
+Date                   :=03/25/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Number_of_1_Bits.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(ObjectSuffix): Convert_Sorted_Array_to_Binary_Search_Tree.cpp $(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Convert_Sorted_Array_to_Binary_Search_Tree.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(DependSuffix): Convert_Sorted_Array_to_Binary_Search_Tree.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(DependSuffix) -MM "Convert_Sorted_Array_to_Binary_Search_Tree.cpp"
+$(IntermediateDirectory)/Number_of_1_Bits.cpp$(ObjectSuffix): Number_of_1_Bits.cpp $(IntermediateDirectory)/Number_of_1_Bits.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Number_of_1_Bits.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Number_of_1_Bits.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Number_of_1_Bits.cpp$(DependSuffix): Number_of_1_Bits.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Number_of_1_Bits.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Number_of_1_Bits.cpp$(DependSuffix) -MM "Number_of_1_Bits.cpp"
 
-$(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(PreprocessSuffix): Convert_Sorted_Array_to_Binary_Search_Tree.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Convert_Sorted_Array_to_Binary_Search_Tree.cpp$(PreprocessSuffix) "Convert_Sorted_Array_to_Binary_Search_Tree.cpp"
+$(IntermediateDirectory)/Number_of_1_Bits.cpp$(PreprocessSuffix): Number_of_1_Bits.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Number_of_1_Bits.cpp$(PreprocessSuffix) "Number_of_1_Bits.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
