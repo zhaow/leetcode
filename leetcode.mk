@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=zw
-Date                   :=03/25/15
+Date                   :=03/27/15
 CodeLitePath           :="/home/zw/.codelite"
 LinkerName             :=/usr/bin/g++ 
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Number_of_1_Bits.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Subsets_II.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Number_of_1_Bits.cpp$(ObjectSuffix): Number_of_1_Bits.cpp $(IntermediateDirectory)/Number_of_1_Bits.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Number_of_1_Bits.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Number_of_1_Bits.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Number_of_1_Bits.cpp$(DependSuffix): Number_of_1_Bits.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Number_of_1_Bits.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Number_of_1_Bits.cpp$(DependSuffix) -MM "Number_of_1_Bits.cpp"
+$(IntermediateDirectory)/Subsets_II.cpp$(ObjectSuffix): Subsets_II.cpp $(IntermediateDirectory)/Subsets_II.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Subsets_II.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Subsets_II.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Subsets_II.cpp$(DependSuffix): Subsets_II.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Subsets_II.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Subsets_II.cpp$(DependSuffix) -MM "Subsets_II.cpp"
 
-$(IntermediateDirectory)/Number_of_1_Bits.cpp$(PreprocessSuffix): Number_of_1_Bits.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Number_of_1_Bits.cpp$(PreprocessSuffix) "Number_of_1_Bits.cpp"
+$(IntermediateDirectory)/Subsets_II.cpp$(PreprocessSuffix): Subsets_II.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Subsets_II.cpp$(PreprocessSuffix) "Subsets_II.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

@@ -88,6 +88,10 @@
     <File Name="Sort_List.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Number_of_1_Bits.cpp" ExcludeProjConfig="Debug"/>
     <File Name="Reverse_Bits.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Sort_Colors.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Search_for_a_Range.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Subsets.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="Subsets_II.cpp" ExcludeProjConfig="Debug"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
