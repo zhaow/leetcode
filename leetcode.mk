@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Subsets_II.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Interleaving_String.cpp$(ObjectSuffix) 
 
 
 
@@ -87,13 +87,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Subsets_II.cpp$(ObjectSuffix): Subsets_II.cpp $(IntermediateDirectory)/Subsets_II.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Subsets_II.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Subsets_II.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Subsets_II.cpp$(DependSuffix): Subsets_II.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Subsets_II.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Subsets_II.cpp$(DependSuffix) -MM "Subsets_II.cpp"
+$(IntermediateDirectory)/Interleaving_String.cpp$(ObjectSuffix): Interleaving_String.cpp $(IntermediateDirectory)/Interleaving_String.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/zw/my_cplus/codeliet_workspace/leetcode/Interleaving_String.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Interleaving_String.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Interleaving_String.cpp$(DependSuffix): Interleaving_String.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Interleaving_String.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Interleaving_String.cpp$(DependSuffix) -MM "Interleaving_String.cpp"
 
-$(IntermediateDirectory)/Subsets_II.cpp$(PreprocessSuffix): Subsets_II.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Subsets_II.cpp$(PreprocessSuffix) "Subsets_II.cpp"
+$(IntermediateDirectory)/Interleaving_String.cpp$(PreprocessSuffix): Interleaving_String.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Interleaving_String.cpp$(PreprocessSuffix) "Interleaving_String.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
